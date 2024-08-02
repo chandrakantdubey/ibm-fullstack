@@ -27,6 +27,22 @@ function show(){
 }
 show();
 
-console.log(functionVar); // Throws ReferenceError
-console.log(functionLet); // Throws ReferenceError
-console.log(functionConst); // Throws ReferenceError
+// console.log(functionVar); // Throws ReferenceError
+// console.log(functionLet); // Throws ReferenceError
+// console.log(functionConst); // Throws ReferenceError
+
+// practice task
+{
+    var varVar = "I'm block scope assigned";
+    let letVar = "I'm block scope assigned";
+    const constVar  = "I'm block scope assigned";
+
+    // varVar = "I'm reassigned.";
+    // letVar = "I'm reassigned.";
+    // constVar = "I'm reassigned.";
+}
+varVar = "I'm reassigned outside a block."
+letVar = "I'm reassigned outside a block."
+constVar = "I'm reassigned outside a block."
+
+
